@@ -1,12 +1,13 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development',
    entry:'./src/index.js', //punto de entrada de nuestra
    output: {
        filename: 'bundle.js', //nombre del
         path: path.resolve(__dirname, 'dist'), //carpeta de salida
     },
-    modele:{
+    module:{
         rules:[
             {
                 test:/\.css$/, //identificar archivos css
@@ -26,7 +27,9 @@ module.exports = {
     },
     devtool: 'source-map',//generar source maps para facilitar la depuracion
     devServer:{
-        contentBase: path.resolve(__dirname, 'dist'),//carpeta principal de servidor
+       static:{
+        directory: path.resolve(__dirname,'dist'),
+       },
         compress: true,// habilitar la comprencion gzip
         port: 9000, //puerto del servidor de desarollo
     },

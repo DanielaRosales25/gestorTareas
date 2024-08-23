@@ -1,8 +1,7 @@
 /* Estilos generales*/
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    background: linear-gradient(rgb(98, 177, 223),rgb(3, 11, 129),rgb(128, 7, 128));
     padding: 0;
     height: 100vh;
     display: flex;
@@ -34,7 +33,7 @@ border-radius: 3px;
 
 button{
 padding: 5px 8px;  /* primer valor de arriba y abajo, segundo valor de los lados*/
-background-color: #007bff;
+background-color: #062546;
 color: white;
 border: none;
 border-radius: 3px;
@@ -46,7 +45,7 @@ ul{
     list-style: none;
     padding: 0;
 }
- /* cambiar estilosde la lista*/
+ /* cambiar estilos de la lista*/
 li{
    background-color: #f4f4f4;
    padding: 10px;
